@@ -58,7 +58,7 @@ function handleMove(e) {
   const idx = parseInt(e.target.id, 10) - 1;
   if (boardState[idx]) return;      // already played
 
-  const mark = current === 0 ? 'X' : 'O';
+  const mark = current === 0 ? 'x' : 'o';
   boardState[idx] = mark;
   e.target.textContent = mark;
   e.target.classList.add('disabled');
